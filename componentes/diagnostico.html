@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>PneumUs - Pré Diagnóstico</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+            <div class="nav-container">
+                <div class="brand">
+                    <a style="margin-right: 20px;" href="../index.html" class="logo"><img src="img/logo.png" width="75" height="75" alt="Logo PneumUs"></a>
+                    <a style="margin-right: 20px;" href="../index.html" class="logof">PneumUs</a>
+                </div>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+                <nav id="menuLinks">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html" class="nav-link">Início</a></li>
+                        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                        <li><a href="diagnostico.html" class="nav-link active">Pré Diagnóstico</a></li>
+                        <li><a href="tratamento.html" class="nav-link">Tratamento</a></li>
+                        <li><a href="creditos.html" class="nav-link">Créditos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
+        </header>
+    <div class="diag-container">
+        <h1 class="titulo">Pré Diagnóstico</h1>
+        <div class="card-diag">
+            <h2>Questionário de Pré Diagnóstico</h2>
+            <p>O questionário de pré diagnóstico tem como objetivo identificar possíveis condições respiratórias com
+                base nos sintomas relatados pelo usuário. Lembrando que este é um instrumento de apoio e não substitui a
+                consulta médica, é muito importante consultar um médico em qualquer dos casos.</p>
+        </div>
+        <form id="questionario">
+            <div id="perguntas"></div>
+
+            <button type="submit">Ver resultado</button>
+
+            <div id="resultado" aria-live="polite"></div>
+        </form>
+    </div>
+    <footer>
+        <a class="ancora" href="#"><img src="img/seta.png" width="35" height="35"></a>
+        <p>&copy; 2026 PneumUs. Todos os direitos reservados.<br>Trabalho acadêmico sem fins lucrativos.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
